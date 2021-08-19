@@ -152,7 +152,7 @@ public final class ADragDropView: NSView {
     
 }
 
-public protocol ADragDropViewDelegate: class {
+public protocol ADragDropViewDelegate: AnyObject {
     func dragDropView(_ dragDropView: ADragDropView, droppedFileWithURL  URL: URL)
     func dragDropView(_ dragDropView: ADragDropView, droppedFilesWithURLs URLs: [URL])
 }
